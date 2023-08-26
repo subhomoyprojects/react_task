@@ -29,6 +29,11 @@ export default function Header() {
                   Accordion
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/toggleReducer">
+                  Toggle Reducer
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

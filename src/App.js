@@ -4,6 +4,7 @@ import Header from "./Header";
 import UseStateComponent from "./UseStateComponent/UseStateComponent";
 import UseReducerComponent from "./UseReducerComponent/UseReducerComponent";
 import Accordion from "./UseStateComponent/Accordion";
+import ToggleParentComponent from "./UseReducerComponent/ToggleParentComponent";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<UseStateComponent />} />
           <Route path="/useReducer" element={<UseReducerComponent />} />
           <Route path="/accordion" element={<Accordion />} />
+          <Route path="/toggleReducer" element={<ToggleParentComponent />} />
         </Routes>
       </Router>
     </div>
