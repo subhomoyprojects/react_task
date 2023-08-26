@@ -1,0 +1,15 @@
+Toggle Component create koro akta useState die 
+Counter Component use Koro useState die
+color change r component banao   
+Form r input handle koro state die
+accordian create korbe useState die 
+akta box create korbe jar limit 50 words hobe
+
+
+Create a simple counter using useReducer. The counter should have buttons to increment and decrement the count.
+
+mplement a todo list using useReducer. Users should be able to add and remove items from the list.
+
+Build a toggle switch using useReducer that changes its state between "On" and "Off" when clicked.
+
+Create a component that fetches data from an API using useReducer. Display loading, success, and error states based on the API response.

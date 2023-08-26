@@ -24,6 +24,11 @@ export default function Header() {
                   UseReducer
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/accordion">
+                  Accordion
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

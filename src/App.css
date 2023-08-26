@@ -35,3 +35,20 @@
 .common-gap {
   padding-block: 40px;
 }
+img {
+  max-width: 100%;
+}
+.accordion-holder li {
+  list-style-type: none;
+}
+.accordion-holder li p {
+  display: none;
+}
+.accordion-holder li.active p {
+  display: block;
+}
+.accordion-holder li h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

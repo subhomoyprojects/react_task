@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Component1 from "./Component1";
 import Component2 from "./Component2";
 
+import LightOff from "../images/pic_bulboff.gif";
+import LightOn from "../images/pic_bulbon.gif";
+
 export default function UseStateComponent() {
   // Toggle Component
   const [toggleComponent, setToggleComponent] = useState(true);
@@ -20,12 +23,12 @@ export default function UseStateComponent() {
     }
   };
 
-  // Color Change
+  // switch on off
+
+  const [light, setLight] = useState(true);
 
   return (
     <>
-      {/* Toggle Component create koro akta useState die  */}
-
       <div className="container common-gap">
         <h2>Toggle</h2>
         {toggleComponent ? <Component1 /> : <Component2 />}
@@ -53,6 +56,18 @@ export default function UseStateComponent() {
             <option value="red">Red</option>
             <option value="blue">Blue</option>
           </select>
+        </div>
+        <div>
+          <h2>Light On Light off</h2>
+          <img src={light ? LightOff : LightOn} alt="" />
+          <button
+            type="button"
+            onClick={() => {
+              setLight((lightState) => !lightState);
+            }}
+          >
+            {light ? "Light On" : "Light Off"}
+          </button>
         </div>
       </div>
     </>
