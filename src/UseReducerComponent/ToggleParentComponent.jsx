@@ -21,6 +21,7 @@ export default function ToggleParentComponent() {
     <>
       <div className="container">
         <div>{state ? <Comp1 /> : <Comp2 />}</div>
+        <br />
         <button className="btn btn-success" type="button" onClick={toggleComp}>
           Toggle
         </button>
