@@ -6,6 +6,7 @@ import UseReducerComponent from "./UseReducerComponent/UseReducerComponent";
 import Accordion from "./UseStateComponent/Accordion";
 import ToggleParentComponent from "./UseReducerComponent/ToggleParentComponent";
 import AccordionReducer from "./UseReducerComponent/AccordionReducer";
+import ReducerFormController from "./UseReducerComponent/ReducerFormController";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/toggleReducer" element={<ToggleParentComponent />} />
           <Route path="/accordionReducer" element={<AccordionReducer />} />
+          <Route path="/reducerFormControl" element={<ReducerFormController />} />
         </Routes>
       </Router>
     </div>

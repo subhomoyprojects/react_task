@@ -30,6 +30,7 @@ export default function UseStateComponent() {
   // Color change
 
   const [color, setColor] = useState("#f00");
+
   const onChangeHandler = (event) => {
     console.log("Selected color:", event.target.value);
 
@@ -39,6 +40,25 @@ export default function UseStateComponent() {
       setColor("#0f0");
     } else if (event.target.value === "blue") {
       setColor("#00f");
+    }
+  };
+
+  // Input
+  const [inputText, setInputText] = useState();
+
+  const onChangeInput = (event) => {
+    setInputText(event.target.value);
+  };
+
+  // Textarea
+
+  const [textLimit, setTextLimit] = useState("");
+
+  const limitText = (event) => {
+    let length = event.target.value.length;
+    console.log(length);
+    if (length < 51) {
+      setTextLimit(event.target.value);
     }
   };
 
@@ -72,6 +92,15 @@ export default function UseStateComponent() {
             <option value="blue">Blue</option>
           </select>
           <div className="colorBox" style={{ backgroundColor: color }}></div>
+        </div>
+        <div>
+          <h2>Input Text</h2>
+          <input type="text" value={inputText} onChange={onChangeInput} />
+          <p>{inputText}</p>
+        </div>
+        <div>
+          <h2>Textarea Limitation {textLimit.length}</h2>
+          <textarea cols="30" rows="10" value={textLimit} onChange={limitText}></textarea>
         </div>
         <div>
           <h2>Light On Light off</h2>

@@ -39,6 +39,11 @@ export default function Header() {
                   Accordion Reducer
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/reducerFormControl">
+                  Reducer form control
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
