@@ -27,6 +27,21 @@ export default function UseStateComponent() {
 
   const [light, setLight] = useState(true);
 
+  // Color change
+
+  const [color, setColor] = useState("#f00");
+  const onChangeHandler = (event) => {
+    console.log("Selected color:", event.target.value);
+
+    if (event.target.value === "red") {
+      setColor("#f00");
+    } else if (event.target.value === "green") {
+      setColor("#0f0");
+    } else if (event.target.value === "blue") {
+      setColor("#00f");
+    }
+  };
+
   return (
     <>
       <div className="container common-gap">
@@ -51,11 +66,12 @@ export default function UseStateComponent() {
         </div>
         <div>
           <h2>Color Change</h2>
-          <select name="colorChanger">
-            <option value="white">White</option>
+          <select name="colorChanger" onChange={onChangeHandler}>
             <option value="red">Red</option>
+            <option value="green">Green</option>
             <option value="blue">Blue</option>
           </select>
+          <div className="colorBox" style={{ backgroundColor: color }}></div>
         </div>
         <div>
           <h2>Light On Light off</h2>
