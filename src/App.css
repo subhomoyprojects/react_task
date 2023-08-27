@@ -41,11 +41,8 @@ img {
 .accordion-holder li {
   list-style-type: none;
 }
-.accordion-holder li p {
+.accordion-holder li p:not(.active) {
   display: none;
-}
-.accordion-holder li.active p {
-  display: block;
 }
 .accordion-holder li h1 {
   display: flex;

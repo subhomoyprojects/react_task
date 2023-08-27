@@ -34,6 +34,11 @@ export default function Header() {
                   Toggle Reducer
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/accordionReducer">
+                  Accordion Reducer
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
