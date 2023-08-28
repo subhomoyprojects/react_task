@@ -44,6 +44,11 @@ export default function Header() {
                   Reducer form control
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/reducerWordCount">
+                  Reducer Word count
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
