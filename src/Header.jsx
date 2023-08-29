@@ -49,6 +49,11 @@ export default function Header() {
                   Reducer Word count
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/reducerAccordion">
+                  Reducer Accordion
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
