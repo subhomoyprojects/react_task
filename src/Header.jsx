@@ -14,50 +14,65 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  UseState
+              <li className="nav-item dropdown">
+                <Link type="button" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Use State
                 </Link>
+                <ul className="dropdown-menu">
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/">
+                      UseState
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/accordion">
+                      Accordion
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/todo">
+                      Todo
+                    </Link>
+                  </li>
+                </ul>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/useReducer">
-                  UseReducer
+              <li className="nav-item dropdown">
+                <Link type="button" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Use Reducer
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/accordion">
-                  Accordion
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/toggleReducer">
-                  Toggle Reducer
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/accordionReducer">
-                  Accordion Reducer
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/reducerFormControl">
-                  Reducer form control
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/reducerWordCount">
-                  Reducer Word count
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/reducerAccordion">
-                  Reducer Accordion
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/todo">
-                  Todo
-                </Link>
+                <ul className="dropdown-menu">
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/useReducer">
+                      UseReducer
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/toggleReducer">
+                      Toggle Reducer
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/reducerFormControl">
+                      Reducer form control
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/reducerWordCount">
+                      Reducer Word count
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/reducerAccordion">
+                      Reducer Accordion
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link className="dropdown-item" aria-current="page" to="/todoReducer">
+                      Todo Reducer
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
