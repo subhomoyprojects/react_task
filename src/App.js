@@ -9,6 +9,7 @@ import AccordionReducer from "./UseReducerComponent/AccordionReducer";
 import ReducerFormController from "./UseReducerComponent/ReducerFormController";
 import UseReducerWordLimit from "./UseReducerComponent/UseReducerWordLimit";
 import ReducerAccordion from "./UseReducerComponent/ReducerAccordion";
+import Todo from "./UseStateComponent/Todo";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/reducerFormControl" element={<ReducerFormController />} />
           <Route path="/reducerWordCount" element={<UseReducerWordLimit />} />
           <Route path="/reducerAccordion" element={<ReducerAccordion />} />
+          <Route path="/todo" element={<Todo />} />
         </Routes>
       </Router>
     </div>
