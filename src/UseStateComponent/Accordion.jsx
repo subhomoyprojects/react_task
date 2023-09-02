@@ -9,12 +9,16 @@ export default function Accordion() {
 
   const [activeIndex, setActiveIndex] = useState(-1);
 
+  // const toggleAccordion = (index) => {
+  //   if (activeIndex === index) {
+  //     setActiveIndex(-1);
+  //   } else {
+  //     setActiveIndex(index);
+  //   }
+  // };
+
   const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(-1);
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? -1 : index);
   };
 
   return (
