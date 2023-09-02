@@ -15,7 +15,12 @@ export default function UseStateComponent() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount(count + 1);
+    if (count < 10) {
+      setCount(count + 1);
+    } else {
+      setCount(count);
+      alert("Limit Rich");
+    }
   };
   const decrement = () => {
     if (count > 0) {
